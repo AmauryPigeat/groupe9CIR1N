@@ -2,20 +2,31 @@
     margin: 0;
 }
 
-nav ul {
+nav ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
     font-family: "Montserrat", arial, sans-serif;
-    font-size: 18px;
+    font-size: 26px;
     padding-top: 10px;
     position: relative;
+}
+
+nav .not_last{
+    margin-right: 16px;
+}
+
+nav .wrap{
+    margin-right: 16px;
+}
+
+nav #first{
+    margin-left: 31px;
 }
 
 nav ul li a{
@@ -24,7 +35,8 @@ nav ul li a{
     border-style: solid;
     border-radius: .5em;
     padding: .5em 1em;
-    margin: .5em;
+    margin-top: 19px;
+    margin-bottom: 27px;
 }
 
 nav ul li a:hover{
@@ -32,16 +44,9 @@ nav ul li a:hover{
     color: white;
 }
 
-nav {
+nav{
     background-color: #D4D4D4;
-    border-bottom: 1px solid black;
-    
-}
-nav .line{
-    background-color: black;
-    transform: rotate(90deg);
-    width: 50px;
-    margin-top: 30px;
+    border-bottom: 1px solid black; 
 }
 
 nav a{
@@ -85,7 +90,7 @@ footer{
     background-color: #2F2F2F;
     color: white;
     padding-bottom: 1em;
-    font-size: 16px;
+    font-size: 24px;
 }
 footer #school{
     display: flex;
