@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-family: "Montserrat", arial, sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+}
+
+nav ul li a:hover{
+    background-color: #2018C4;
+    color: white;
+}
+
+nav {
+    background-color: #D4D4D4;
+    border-bottom: 1px solid black;
+    
+}
+nav .line{
+    background-color: black;
+    transform: rotate(90deg);
+    width: 50px;
+    margin-top: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrap > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+nav ul li:hover .sub_menu1{
+    display: block;
+}
+nav ul li .sub_menu1{
+    display: none;
+    position: absolute;
+    width: 340px;
+    background-color: #D4D4D4;
+    padding: .3em;
+    border: 1px solid black;
+    margin-left: -30%;
+}
+
+nav ul li:hover .sub_menu2{
+    display: block;
+}
+nav ul li .sub_menu2{
+    display: none;
+    position: absolute;
+    background-color: #D4D4D4;
+    width: 100%;
+    padding: .3em;
+    border: 1px solid black;
+    margin-left: -3%;
+}
+
+footer{
+    font-family: "Montserrat", arial, sans-serif;
+    background-color: #2F2F2F;
+    color: white;
+    padding-bottom: 1em;
+    font-size: 16px;
+}
+footer #school{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li{
+    list-style-type: none;
+    padding-top: 1em;
+}
+
+footer #dev{
+    padding-left: 10em;
+}
+
+footer #dev i{
+    font-size: 22px;
+    padding-left: .7em;
+}
