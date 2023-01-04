@@ -8,25 +8,26 @@ nav ul{
     flex-direction: row;
     margin: 0;
     padding: 0;
+    justify-content: space-around;
 }
 
 nav ul li {
     font-family: "Montserrat", arial, sans-serif;
-    font-size: 26px;
+    font-size: 120%;
     padding-top: 10px;
     position: relative;
 }
 
 nav .not_last{
-    margin-right: 16px;
+    margin-right: 1%;
 }
 
 nav .wrap{
-    margin-right: 16px;
+    margin-right: 1%;
 }
 
 nav #first{
-    margin-left: 31px;
+    margin-left: 1%;
 }
 
 nav ul li a{
@@ -52,11 +53,6 @@ nav{
 nav a{
     text-decoration: none;
     color: black;
-}
-
-.wrap > a::after{
-    content:" ▼";
-    font-size: 12px;
 }
 
 nav ul li:hover .sub_menu1{
@@ -90,7 +86,7 @@ footer{
     background-color: #2F2F2F;
     color: white;
     padding-bottom: 1em;
-    font-size: 24px;
+    font-size: 100%;
 }
 footer #school{
     display: flex;
