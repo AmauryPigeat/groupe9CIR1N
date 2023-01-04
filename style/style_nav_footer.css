@@ -9,6 +9,7 @@ nav ul{
     margin: 0;
     padding: 0;
     justify-content: space-around;
+    flex-grow: 1;
 }
 
 nav ul li {
@@ -48,6 +49,7 @@ nav ul li a:hover{
 nav{
     background-color: #D4D4D4;
     border-bottom: 1px solid black; 
+    width: 100%;
 }
 
 nav a{
