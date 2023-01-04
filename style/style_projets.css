@@ -1,0 +1,42 @@
+#layout{
+    font-family: "Montserrat", arial, sans-serif;
+    margin-top: 50px;
+    margin-left: 57px;
+    margin-right: 50px;
+}
+
+#layout h1{
+    font-size: 300%;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+}
+
+#layout i {
+    font-size: 100%;
+    transform: rotate(20deg);
+
+}
+
+
+#Castel {
+    display: flex;
+}
+#Visemar {
+    display: flex;
+}
+#SEAS {
+    display: flex;
+}
+#HPeC {
+    display: flex;
+}
+h2 {
+    text-align: center;
+}
+#seas0{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
