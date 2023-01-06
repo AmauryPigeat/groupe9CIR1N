@@ -107,10 +107,10 @@ footer ul li{
 }
 
 footer #dev{
-    padding-left: 10em;
+    text-align: center;
 }
 
 footer #dev i{
     font-size: 22px;
-    padding-left: .7em;
+    padding-left: .6em;
 }
