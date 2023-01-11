@@ -1,0 +1,144 @@
+#layout {
+    margin: 5%;
+}
+
+#layout h1{
+    font-size: 4.2vw;
+    font-weight: 700;
+}
+
+#layout i{
+    transform: rotate(16.25deg);
+}
+
+#layout ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+#layout ul li a{
+    display: block;
+    border: 1px solid #5B5B5B;
+    border-radius: 5px;
+    font-size: 0.8vw;
+    color: white;
+    background-color: #5B5B5B;
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+}
+
+#layout img{
+    width: 100%;
+}
+
+#layout .univ_bretagne{
+    display: grid;
+    grid-template-columns: 33.94% 5.44% 60.62%;
+    grid-template-rows: 33.57% 13.29% 34.27% 4.20% 14.69%;
+}
+
+#layout .univ_bretagne img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .univ_bretagne ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+#layout .univ_bretagne h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout .malakoff{
+    display: grid;
+    grid-template-columns: 36.09% 3.49% 60.41%;
+    grid-template-rows: 39.16% 13.29% 28.67% 4.20% 14.69%;
+}
+
+#layout .malakoff img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .malakoff ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout .malakoff h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout .ecr{
+    display: grid;
+    grid-template-columns: 31.61% 8.03% 60.36%;
+    grid-template-rows: 38.92% 11.38% 33.53% 3.59% 12.27%;
+}
+
+#layout .ecr img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .ecr ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout .ecr h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout .kardham{
+    display: grid;
+    grid-template-columns: 33.94% 5.44% 60.62%;
+    grid-template-rows: 33.57% 13.29% 34.27% 4.20% 14.69%;
+}
+
+#layout .kardham img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .kardham ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout .kardham h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
