@@ -4,19 +4,19 @@
 }
 
 #layout h1{
-    font-size: 250%;
+    font-size: 2vw ;
     font-weight: 700;
 }
 
 #layout p{
-    font-size: 150%;
+    font-size: 1.2vw;
     text-align: justify;
 }
 
 #layout #nantes{
     display: grid;
     grid-template-columns: 11.67% 1.20% 16.61% 35.47% 3.96% 26.30% 4.79%;
-    grid-template-rows: 2.13% 2.91% 1.59% 1.05% 15.54% 1.94%;
+    grid-template-rows: 8.32% 11.35% 6.20% 4.08% 62.48% 7.56%;
 }
 
 #layout #nantes h1{
@@ -30,7 +30,7 @@
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-end: 7;
 }
 
 #layout #nantes img{
@@ -43,14 +43,14 @@
 #layout #brest{
     display: grid;
     grid-template-columns: 11.67% 1.20% 14.06% 38.07% 2.14% 30% 2.86%;
-    grid-template-rows: 1.59% 2.14% 16.70% 2.44%;
+    grid-template-rows: 6.81% 9.14% 73.59% 10.47%;
 }
 
 #layout #brest h1{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
 }
 
 #layout #brest p{
@@ -70,7 +70,7 @@
 #layout #caen{
     display: grid;
     grid-template-columns: 11.67% 1.20% 14.06% 29.32% 10.73% 30.26% 2.76%;
-    grid-template-rows: 1.78% 1.40% 2.02% 15.69%;
+    grid-template-rows: 8.32% 6.51% 9.40% 75.41% 0.36%;
 }
 
 #layout #caen h1{
@@ -91,13 +91,13 @@
     grid-column-start: 6;
     grid-column-end: 7;
     grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-end: 6;
 }
 
 #layout #rennes{
     display: grid;
     grid-template-columns: 11.67% 1.20% 16.61% 26.72% 6.25% 33.96% 3.59%;
-    grid-template-rows: 1.51% 1.59% 1.48% 19.11% 1.39%  3%;
+    grid-template-rows: 5.50% 5.78% 5.36% 71.23% 5.08%  7.05%;
 }
 
 #layout #rennes h1{
@@ -111,7 +111,7 @@
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-end: 7;
 }
 
 #layout #rennes img{
@@ -119,4 +119,53 @@
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 6;
+}
+
+@media screen and (max-width : 890px){
+    #layout{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #layout h1{
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    #layout p{
+        margin-bottom: 5%;
+    }
+
+    #layout img{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #layout #nantes{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        
+    }
+
+    #layout #brest{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+
+    }
+
+    #layout #caen{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    #layout #rennes{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
 }
