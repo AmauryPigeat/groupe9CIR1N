@@ -304,3 +304,73 @@
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
+#layout .univ_maroc{
+    display: grid;
+    grid-template-columns: 33.38% 6.60% 60.03%;
+    grid-template-rows: 31.82% 36.36% 14.29% 3.90% 13.64%;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout .univ_maroc img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .univ_maroc ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout .univ_maroc h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout #internationaux{
+    display: grid;
+    grid-template-columns: 44.10% 11.01% 44.89%;
+    grid-template-rows: 8.10% 77.14% 14.76%;
+}
+
+#layout .sfax{
+    display: grid;
+    grid-template-columns: 31% 7.24% 61.75%;
+    grid-template-rows: 39.61% 25.12% 22.22% 2.90% 10.14%;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .sfax img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .sfax ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout .sfax h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
