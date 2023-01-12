@@ -36,10 +36,29 @@
     width: 100%;
 }
 
+#layout h2{
+    font-size: 1.27vw;
+}
+
+#layout section{
+    padding-top: 4vw;
+}
+
+#layout #nationaux{
+    display: grid;
+    grid-template-columns: 44.06% 11.36% 44.58%;
+    grid-template-rows: 19,02% 7,98% 19,02% 7,98% 19,02% 7,98% 19,02%;
+}
+
 #layout .univ_bretagne{
     display: grid;
     grid-template-columns: 33.94% 5.44% 60.62%;
     grid-template-rows: 33.57% 13.29% 34.27% 4.20% 14.69%;
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 #layout .univ_bretagne img{
@@ -66,6 +85,11 @@
     display: grid;
     grid-template-columns: 36.09% 3.49% 60.41%;
     grid-template-rows: 39.16% 13.29% 28.67% 4.20% 14.69%;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 
 #layout .malakoff img{
@@ -93,6 +117,11 @@
     display: grid;
     grid-template-columns: 31.61% 8.03% 60.36%;
     grid-template-rows: 38.92% 11.38% 33.53% 3.59% 12.27%;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
 }
 
 #layout .ecr img{
@@ -120,6 +149,11 @@
     display: grid;
     grid-template-columns: 33.94% 5.44% 60.62%;
     grid-template-rows: 33.57% 13.29% 34.27% 4.20% 14.69%;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
 }
 
 #layout .kardham img{
@@ -137,6 +171,134 @@
 }
 
 #layout .kardham h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout .castel{
+    display: grid;
+    grid-template-columns: 33.50% 6.65% 59.85%;
+    grid-template-rows: 40.56% 13.29% 27.27% 4.20% 14.69%;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#layout .castel img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .castel ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout .castel h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout .Acome{
+    display: grid;
+    grid-template-columns: 35.35% 5.56% 59.09%;
+    grid-template-rows: 31.78% 14.73% 32.56% 4.65% 16.28%;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#layout .Acome img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .Acome ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout .Acome h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout .generix{
+    display: grid;
+    grid-template-columns: 38.51% 2.78% 58.71%;
+    grid-template-rows: 24% 15.20% 39.20% 4.80% 16.80%;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+#layout .generix img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .generix ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout .generix h2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout .thales{
+    display: grid;
+    grid-template-columns: 36.63% 5.75% 57.63%;
+    grid-template-rows: 13.85% 29.23% 15.38% 9.23% 32.31%;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#layout .thales img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout .thales ul{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout .thales h2{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
