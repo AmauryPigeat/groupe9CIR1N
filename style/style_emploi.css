@@ -1,0 +1,25 @@
+#layout #intro{
+    margin: 3vw;
+    padding: 1vw;
+    margin-right: 20vw;
+
+    display: block;
+    background-color: #DADADA;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 1.5vw;
+}
+
+#layout #description{
+    font-size: 2vw;
+    margin-left: 4vw;
+    margin-bottom: 4vw;
+}
+
+#layout li{
+    margin-left: 1.5vw;
+}
+
+#layout a:visited{
+    color: black;
+}
