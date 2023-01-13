@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: "Montserrat", arial, sans-serif;
 }
 
 nav ul{
@@ -13,8 +14,7 @@ nav ul{
 }
 
 nav ul li {
-    font-family: "Montserrat", arial, sans-serif;
-    font-size: 140%;
+    font-size: 1.1vw;
     padding-top: 10px;
     position: relative;
 }
@@ -49,7 +49,6 @@ nav ul li a:hover{
 nav{
     background-color: #D4D4D4;
     border-bottom: 1px solid black; 
-    width: 100%;
 }
 
 nav a{
@@ -90,11 +89,10 @@ nav ul li .sub_menu2{
 */
 
 footer{
-    font-family: "Montserrat", arial, sans-serif;
     background-color: #2F2F2F;
     color: white;
     padding-bottom: 1em;
-    font-size: 100%;
+    font-size: 1.2vw;
 }
 footer #school{
     display: flex;
@@ -113,12 +111,11 @@ footer ul li{
 }
 
 footer #dev{
-    padding-left: 10em;
+    text-align: center;
 }
 
 footer #dev i{
-    font-size: 22px;
-    padding-left: .7em;
+    padding-left: .6em;
 }
 
 .menu-hamburger{

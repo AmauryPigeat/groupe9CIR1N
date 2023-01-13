@@ -1,0 +1,66 @@
+#layout h1{
+    text-align: center;
+    font-size: 5.3vw;
+    font-weight: 700;
+}
+
+#layout h1 i{
+    transform: rotate(-17.4deg);
+}
+
+#layout #presentation{
+    display: block;
+    border-radius: 15px;
+    background-color: #DADADA;
+
+    text-align: justify;
+    font-size: 1.6vw;
+
+    margin: 2vw;
+    padding: 1.5vw;
+}
+
+#layout h2{
+    text-align: center;
+    font-size: 2vw;
+}
+
+#layout #axe_un{
+    display: block;
+    border-radius: 15px;
+    background-color: #DADADA;
+
+    text-align: justify;
+    font-size: 1.6vw;
+    line-height: 2.5vw;
+
+    margin: 2vw;
+    padding: 1.5vw;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #axe_deux{
+    display: block;
+    border-radius: 15px;
+    background-color: #DADADA;
+
+    text-align: justify;
+    font-size: 1.6vw;
+
+    margin: 2vw;
+    padding: 1.5vw;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #axes{
+    display: grid;
+    grid-template-columns: 5.89% 42.80% 3.14% 42.80% 5.37%;
+    grid-template-rows: 100%;
+}
