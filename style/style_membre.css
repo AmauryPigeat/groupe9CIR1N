@@ -1,0 +1,13 @@
+#layout{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+#layout i{
+    transform: rotate(-13.11deg);
+}
+
+#layout h1{
+    text-align: center;
+    font-size: 2vw;
+}
