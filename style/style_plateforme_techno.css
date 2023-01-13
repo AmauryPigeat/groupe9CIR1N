@@ -1,0 +1,82 @@
+#layout h1{
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+#layout h1 i{
+    transform: rotate(-17.8deg);
+}
+
+#layout #presentation{
+    border-radius: 10px;
+    background-color: #DADADA;
+    margin-left: 5vw;
+    margin-right: 30vw;
+    text-align: justify;
+    padding: 1.5vw;
+    font-size: 1.5vw;
+}
+
+#layout h2{
+    color: #5985F5;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+#layout #chambre_connecte{
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+#layout #grid_chambre{
+    display: grid;
+    grid-template-columns: 22.43% 2.81% 74.76%;
+    grid-template-rows: 14.58% 66.67% 18.75%;
+}
+
+#layout #grid_chambre img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#layout #grid_chambre p{
+    text-align: justify;
+    font-size: 1vw;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout #hybrides{
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+#layout #grid_hybride{
+    display: grid;
+    grid-template-columns: 22.29% 3.04% 74.67%;
+    grid-template-rows: 6.95% 86.49% 6.56%;
+}
+
+#layout #grid_hybride img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#layout #grid_hybride p{
+    text-align: justify;
+    font-size: 1.1vw;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
