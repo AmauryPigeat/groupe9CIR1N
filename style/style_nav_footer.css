@@ -136,18 +136,6 @@ footer #dev i{
 
 @media screen and (max-width: 1504px) {
 
-    .menu-hamburger{
-        display: block;
-        cursor: pointer;
-    }
-    nav ul li img {
-        display: none;
-    }
-
-    .logo-responsive{
-        display: block;
-    }
-
     nav{
         display: flex;
         flex-direction: column;
@@ -166,7 +154,23 @@ footer #dev i{
         margin-left: -110%;
     }
 
-    .mobile-menu{
+    .open-menu-hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    nav ul li img {
+        display: none;
+    }
+
+    #logoresponsive{
+        display: block;
+    }
+
+
+    .open-menu{
+        z-index: 1;
+        padding-right: 0;
+        padding-left: 0;
         margin-left: 0;
         transition: all 0.5s ease;
     }
