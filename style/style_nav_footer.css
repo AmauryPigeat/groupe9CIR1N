@@ -126,7 +126,7 @@ footer #dev i{
     width: 8%;
 }
 
-.logo-responsive{
+#logoresponsive{
     display: none;
     position: absolute;
     top: 1%;
@@ -136,7 +136,21 @@ footer #dev i{
 
 @media screen and (max-width: 1504px) {
 
+    .menu-hamburger{
+        z-index: 5;
+        display: block;
+        cursor: pointer;
+    }
+    nav ul li img {
+        display: none;
+    }
+
+    #logoresponsive{
+        display: block;
+    }
+
     nav{
+        z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -154,29 +168,22 @@ footer #dev i{
         margin-left: -110%;
     }
 
-    .open-menu-hamburger{
-        display: block;
-        cursor: pointer;
-    }
-    nav ul li img {
-        display: none;
-    }
-
-    #logoresponsive{
-        display: block;
-    }
-
-
-    .open-menu{
+    .mobile-menu{
         z-index: 1;
         padding-right: 0;
         padding-left: 0;
         margin-left: 0;
-        transition: all 0.5s ease;
+        transition: all 0.5s;
     }
-    
-    .mobile-menu#logo-responsive{
-        display: none;
+    .mobile-menu#logoresponsive{
+        z-index: -1;
+    }
+    .mobile-menu .menu-hamburger{
+        z-index: 5;
+    }
+
+    nav ul li {
+        font-size: 1.5vw;
     }
 
     nav ul{
@@ -188,7 +195,7 @@ footer #dev i{
         background-color: rgb(129, 129, 129);
         border-style: none;
         font-size: 50%;
-        margin-top: -80%;
+        margin-top: -100%;
         margin-left: 120%;
         padding-right: 1%;
     }
@@ -197,7 +204,7 @@ footer #dev i{
         background-color: rgb(129, 129, 129);
         border-style: none;
         font-size: 50%;
-        margin-top: -80%;
+        margin-top: -90%;
         margin-left: 120%;
         padding-right: 1%;
     }
