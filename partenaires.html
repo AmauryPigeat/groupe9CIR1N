@@ -35,9 +35,22 @@
         </ul>
     </nav>
 
+    <img src="img/logo_labisen.png" title="logo_labisen" alt="Image not found !" width="213px" id="logoresponsive">
+    <img src="img/menu_fill.png" alt="Menu déroulant" class="menu-hamburger">
+    <!-- FROM A VIDEO ON YOUTUBE : LIVECODE-->
+    <script> 
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector("nav")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <!-------------------------------------->
+
     <body>
         <div id="layout">
-            <h1>Nos partenaires nationaux<i class="fa-solid fa-handshake"></i></h1>
+            <h1>Nos partenaires nationaux <i class="fa-solid fa-handshake"></i></h1>
             <div id="nationaux">
                 <section class="univ_bretagne">
                     <img src="img/partenaires/logo_univ_bretagne.png" title="Logo de l'Université de Bretagne Occidentale" alt="Image not found !">
@@ -120,7 +133,7 @@
                 </section>
             </div>
             <br><br><br>
-            <h1>Nos partenaires nationaux<i class="fa-solid fa-handshake"></i></h1>
+            <h1>Nos partenaires internationaux <i class="fa-solid fa-handshake"></i></h1>
             <br><br><br>
             <div id="internationaux">
                 <section class="univ_maroc">

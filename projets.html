@@ -35,10 +35,22 @@
         </ul>
     </nav>
 
+    <img src="img/logo_labisen.png" title="logo_labisen" alt="Image not found !" width="213px" id="logoresponsive">
+    <img src="img/menu_fill.png" alt="Menu déroulant" class="menu-hamburger">
+    <!-- FROM A VIDEO ON YOUTUBE : LIVECODE-->
+    <script> 
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector("nav")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <!-------------------------------------->
 
     <body>
         <div id="layout">
-            <h1>Projets en cours                 <i class="fa-regular fa-hourglass"></i></h1>
+            <h1>Projets en cours</h1>
             <br><br><hr><br>
             <div id="projetsEnCours">
                 <div id="Castel">

@@ -26,14 +26,28 @@
             <li class="wrap">
                 <a href="#"><i class="fa-solid fa-address-card"></i> Infos et contacts</a>
                 <ul class="sub_menu2">
-                    <li></i> <a href="contact.html"><i class="fa-solid fa-phone"></i> Contactez-nous</a></li>
-                    <li></i> <a href="plan.html"><i class="fa-regular fa-map"></i> Plan d'accès</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contactez-nous</a></li>
+                    <li><a href="plan.html"><i class="fa-regular fa-map"></i> Plan d'accès</a></li>
                     <li><a href="emploi.html"><i class="fa-solid fa-suitcase"></i> Offres d'emploi</a></li>
                 </ul>
             </li>
             <li><a href="partenaires.html"><i class="fa-solid fa-handshake-simple"></i> Partenaires</a></li>
         </ul>
     </nav>
+
+    <img src="img/logo_labisen.png" title="logo_labisen" alt="Image not found !" width="213px" id="logoresponsive">
+    <img src="img/menu_fill.png" alt="Menu déroulant" class="menu-hamburger">
+    <!-- FROM A VIDEO ON YOUTUBE : LIVECODE-->
+    <script> 
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector("nav")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+        
+    </script>
+    <!-------------------------------------->
 
     <body>
         <div id="layout">
@@ -43,7 +57,7 @@
                     L’équipe « Vision et Analyse de Données » est une équipe du laboratoire L@bISEN de l’ISEN Yncréa Ouest. L’équipe mène une activité de R&D pour la conception de plateformes technologiques d’observations et d’analyses à partir de réseaux de capteurs intelligents.
                 </p>
             </div>
-            <img class="reunion" src="img/accueil/equipe_reunion.png" title="illustration_reunion" alt="Image not Found !" width="100%">
+            <img class="reunion" src="img/accueil/equipe_reunion.png" title="illustration_reunion" alt="Image not Found !" width="100%" down="1%">
             <a class="axes_recherches" href="theme_recherche.html"><i class="fa-solid fa-arrow-right"></i> Voir nos axes de recherches !</a>
             <div id="actualites">
                 <h1>Nos actualités</h1>

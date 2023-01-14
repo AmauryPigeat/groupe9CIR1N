@@ -82,6 +82,12 @@ nav ul li .sub_menu2{
     margin-left: -3%;
 }
 
+/*
+*
+* FOOTER
+*
+*/
+
 footer{
     background-color: #2F2F2F;
     color: white;
@@ -111,3 +117,98 @@ footer #dev{
 footer #dev i{
     padding-left: .6em;
 }
+
+.menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 1%;
+    right: 4%;
+    width: 8%;
+}
+
+#logoresponsive{
+    display: none;
+    position: absolute;
+    top: 1%;
+    left: 4%;
+    width: 15%; 
+}
+
+@media screen and (max-width: 1504px) {
+
+    .menu-hamburger{
+        z-index: 5;
+        display: block;
+        cursor: pointer;
+    }
+    nav ul li img {
+        display: none;
+    }
+
+    #logoresponsive{
+        display: block;
+    }
+
+    nav{
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 2vh;
+        position: absolute;
+        background: none;
+        border-bottom: none;
+        background-color: rgb(129, 129, 129);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        margin-left: -110%;
+    }
+
+    .mobile-menu{
+        z-index: 1;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0;
+        transition: all 0.5s;
+    }
+    .mobile-menu#logoresponsive{
+        z-index: -1;
+    }
+    .mobile-menu .menu-hamburger{
+        z-index: 5;
+    }
+
+    nav ul li {
+        font-size: 1.5vw;
+    }
+
+    nav ul{
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    nav ul li .sub_menu1{
+        background-color: rgb(129, 129, 129);
+        border-style: none;
+        font-size: 50%;
+        margin-top: -100%;
+        margin-left: 120%;
+        padding-right: 1%;
+    }
+
+    nav ul li .sub_menu2{
+        background-color: rgb(129, 129, 129);
+        border-style: none;
+        font-size: 50%;
+        margin-top: -90%;
+        margin-left: 120%;
+        padding-right: 1%;
+    }
+
+}
+
+
