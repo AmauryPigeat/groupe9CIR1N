@@ -1,13 +1,297 @@
 #layout{
     margin-top: 3vw;
     margin-bottom: 3vw;
+    margin-left: 2.76%;
+    margin-right: 2.76%;
 }
 
-#layout i{
+#layout h1 i{
     transform: rotate(-13.11deg);
 }
 
 #layout h1{
     text-align: center;
     font-size: 2vw;
+}
+
+#layout #top{
+    display: grid;
+    grid-template-columns: 21.66% 22.05% 12.57% 22.05% 21.66%;
+    grid-template-rows: 100%;
+    
+}
+
+#layout a:visited{
+    color: black;
+}
+
+#layout a{
+    color: black;
+    text-decoration: none;
+}
+
+#layout #top p{
+    font-size: 1vw;
+}
+
+#layout #top p i{
+    font-size: 2vw;
+}
+
+#layout #top img{
+    border-radius: 50%;
+}
+
+#layout #card_ayoub{
+    border: 2px solid #5E5E5E;
+    border-radius: 11px;
+    text-align: center;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+#layout #top h2{
+    font-size: 2vw;
+}
+
+#layout #card_ayoub ul li a{
+    display: block;
+    border: 1px solid #5B5B5B;
+    border-radius: 5px;
+    font-size: 0.7vw;
+    color: white;
+    background-color: #5B5B5B;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none;
+    margin: 3px;
+}
+
+#layout #card_ayoub ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 14.50% 3.75% 16% 13% 0.75% 1% 0.75% 16% 15.25% 4.25% 14.75%;
+    grid-template-rows: 29.11% 6.33% 29.11% 6.33% 29.11%;
+    margin-left: -10%;
+}
+
+#layout ul li{
+    color: white;
+}
+
+#layout #card_ayoub .first{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #card_ayoub .second{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #card_ayoub .third{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#layout #card_ayoub .fourth{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#layout #card_ayoub .fifth{
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout #card_maher{
+    border: 2px solid #5E5E5E;
+    border-radius: 11px;
+    text-align: center;
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #card_maher ul li a{
+    display: block;
+    border: 1px solid #5B5B5B;
+    border-radius: 5px;
+    font-size: 0.65vw;
+    color: white;
+    background-color: #5B5B5B;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none;
+    margin: 3px;
+}
+
+#layout #card_maher ul{
+    display: grid;
+    grid-template-columns: 7% 4.5% 3.25% 0.75% 2% 9% 0.75% 26.75% 0.75% 27.75% 6% 4.50% 7%;
+    grid-template-rows: 29.87% 5.19% 29.87% 5.19% 29.87%;
+    list-style-type: none;
+}
+
+#layout #card_maher .first{
+    grid-column-start: 3;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #card_maher .second{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#layout #card_maher .third{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#layout #card_maher .fourth{
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#layout #card_maher .fifth{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#layout #card_maher .sixth{
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#layout #bottom{
+    display: grid;
+    grid-template-columns: 2.37% 22.05% 2.37% 22.05% 2.37% 22.05% 2.37% 22.05% 2.32%;
+    grid-template-rows: 4.89% 11.49% 68.95% 6.60% 8.07%;
+}
+
+#layout hr{
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+}
+
+
+
+#layout #bottom .first{
+    font-size: 2vw;
+    text-align: center;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #bottom .second{
+    font-size: 2vw;
+    text-align: center;
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #bottom .third{
+    font-size: 2vw;
+    text-align: center;
+
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #bottom .fourth{
+    font-size: 2vw;
+    text-align: center;
+
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#layout #card_djamel{
+    border: 2px solid #5E5E5E;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 1vw;
+    padding-bottom: 2vw;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+#layout #card_salima_first{
+    border: 2px solid #5E5E5E;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 1vw;
+    padding-bottom: 2vw;
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#layout #card_salima_second{
+    border: 2px solid #5E5E5E;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 1vw;
+    padding-bottom: 2vw;
+
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#layout #card_sylvain{
+    border: 2px solid #5E5E5E;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 1vw;
+    padding-bottom: 2vw;
+
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
