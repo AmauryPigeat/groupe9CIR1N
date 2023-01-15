@@ -121,7 +121,8 @@
     grid-row-end: 6;
 }
 
-@media screen and (max-width : 890px){
+@media screen and (max-width: 1504px) {
+
     #layout{
         margin-left: 5%;
         margin-right: 5%;
