@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+h1{
+    margin-top: 4vw;
+    text-align: center;
+}
+h1 i{
+    font-size: 110%;
+    transform: rotate(15deg);
+}
+
+h3{
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+NAME 
+*/
+
+form .divName{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1.0vw;
+}
+
+form .divName input{
+    margin-top: 5px;
+    padding: 10px 0px 10px 30px;
+    width: 350px;
+    border: 1px solid #c9c9c9;
+    outline-color: black;
+    border-radius: 5px;
+}
+
+form .divName i{
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    padding: 9px 10px;
+}
+
+/*
+EMAIL
+*/
+
+form .divMail{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1.0vw;
+}
+
+form .divMail input{
+    margin-top: 5px;
+    padding: 10px 0px 10px 30px;
+    width: 350px;
+    border: 1px solid #c9c9c9;
+    outline-color: black;
+    border-radius: 5px;
+}
+
+form .divMail i{
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    padding: 9px 10px;
+}
+
+/*
+MESSAGE
+*/
+
+form .divMessage{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2vw;
+}
+
+form .divMessage textarea{
+    margin-top: 5px;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid #c9c9c9;
+    outline-color: black;
+    border-radius: 5px;
+}
+
+form .divMessage i{
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    padding: 9px 10px;
+}
+
+/*
+SUBMIT
+*/
+
+form .divSubmit{
+    margin-bottom: 5vw;
+}
+
+form .divSubmit input{
+    margin-bottom: 2vw;
+    background-color: #428EFF;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
