@@ -1,5 +1,5 @@
 #layout{
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 10%;
     padding-left: 4%;
     font-family: "Montserrat", arial, sans-serif;
@@ -115,4 +115,10 @@
     grid-column-end: 8;
     grid-row-start: 6;
     grid-row-end: 7;
+}
+
+@media screen and (max-width: 1504px){
+    #layout {
+        margin-top: 5vw;
+    }
 }
