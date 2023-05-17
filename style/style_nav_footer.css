@@ -3,6 +3,13 @@
     font-family: "Montserrat", arial, sans-serif;
 }
 
+#loader{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    scale: 300%;
+}
+
 nav ul{
     list-style-type: none;
     display: flex;

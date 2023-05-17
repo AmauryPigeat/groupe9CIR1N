@@ -56,27 +56,31 @@
     <!-------------------------------------->
 
     <body>
-       
-        <h1>Contactez le responsable d'équipe <i class="fa-solid fa-id-badge"></i></h1>
-        <h3>(Maher Jridi - maher.jridi@isen-ouest.yncrea.fr)</h3>
-
-        <form action="contact.html" method="post">
-            <div class="divName">
-                <input type="text" placeholder="Prénom Nom">
-                <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="divMail">
-                <input type="text" placeholder="email@exemple.com">
-                <i class="fa-solid fa-at"></i>
-            </div>
-            <div class="divMessage">
-                <textarea name="paragraph_text" cols="50" rows="10" placeholder="Votre message (500 caractères maximum)"></textarea>
-            </div>
-            <div class="divSubmit">
-                <input type="submit" value="Envoyer">
-            </div>
-        </form>
-
+        <div id="loader">
+            <img src="img/xddingLoader.webp" title="xxdingLoader" alt="Image not found !" id="imgLoader">
+        </div>
+        
+        <div id="layout">
+            <h1>Contactez le responsable d'équipe <i class="fa-solid fa-id-badge"></i></h1>
+            <h3>(Maher Jridi - maher.jridi@isen-ouest.yncrea.fr)</h3>
+    
+            <form action="contact.html" method="post">
+                <div class="divName">
+                    <input type="text" placeholder="Prénom Nom">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="divMail">
+                    <input type="text" placeholder="email@exemple.com">
+                    <i class="fa-solid fa-at"></i>
+                </div>
+                <div class="divMessage">
+                    <textarea name="paragraph_text" cols="50" rows="10" placeholder="Votre message (500 caractères maximum)"></textarea>
+                </div>
+                <div class="divSubmit">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
     </body>
 
     <footer>

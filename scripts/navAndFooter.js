@@ -28,15 +28,45 @@ function date(){
     let clock = document.getElementById("clock");
 
     const event = new Date();
-    console.log(event.toLocaleTimeString('fr-FR'))
     clock.innerText = event.toLocaleTimeString('fr-FR');
 }
 
 setInterval(date, 1000);
 
+function loaderEnd(){
+    let nav = document.getElementsByTagName("nav")[0];
+    let body = document.getElementById("layout");
+    let footer = document.getElementsByTagName("footer")[0];
+    let loader = document.getElementById("imgLoader");
+
+    temps = 0;
+    nav.style.removeProperty("display");
+    body.style.removeProperty("display");
+    footer.style.removeProperty("display");
+    loader.style.display = "none";
+    loader.style.marginBottom = "0%";
+    loader.style.scale = "0";
+}
+
+function loaderStart(){
+    let nav = document.getElementsByTagName("nav")[0];
+    let body = document.getElementById("layout");
+    let footer = document.getElementsByTagName("footer")[0];
+    let loader = document.getElementById("imgLoader");
+
+    nav.style.display = "none";
+    body.style.display = "none";
+    footer.style.display = "none";
+    loader.style.display = "block";
+}
+
+
+setTimeout(loaderEnd,2000);
+
 function main(){
     augmenterTemps();
     date();
+    loaderStart();
 }
 
 main();
