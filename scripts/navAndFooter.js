@@ -23,3 +23,20 @@ function augmenterTemps() {
 }
 
 setInterval(augmenterTemps, 1000);
+
+function date(){
+    let clock = document.getElementById("clock");
+
+    const event = new Date();
+    console.log(event.toLocaleTimeString('fr-FR'))
+    clock.innerText = event.toLocaleTimeString('fr-FR');
+}
+
+setInterval(date, 1000);
+
+function main(){
+    augmenterTemps();
+    date();
+}
+
+main();

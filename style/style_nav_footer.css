@@ -82,6 +82,13 @@ nav ul li .sub_menu2{
     margin-left: -3%;
 }
 
+nav #timerAndClock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
 /*
 *
 * FOOTER
