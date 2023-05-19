@@ -33,6 +33,18 @@ function date(){
 
 setInterval(date, 1000);
 
+function loaderStart(){
+    let nav = document.getElementsByTagName("nav")[0];
+    let body = document.getElementById("layout");
+    let footer = document.getElementsByTagName("footer")[0];
+    let loader = document.getElementById("imgLoader");
+
+    nav.style.display = "none";
+    body.style.display = "none";
+    footer.style.display = "none";
+    loader.style.display = "block";
+}
+
 function loaderEnd(){
     let nav = document.getElementsByTagName("nav")[0];
     let body = document.getElementById("layout");
@@ -48,25 +60,28 @@ function loaderEnd(){
     loader.style.scale = "0";
 }
 
-function loaderStart(){
-    let nav = document.getElementsByTagName("nav")[0];
-    let body = document.getElementById("layout");
-    let footer = document.getElementsByTagName("footer")[0];
-    let loader = document.getElementById("imgLoader");
+setTimeout(loaderEnd,2000);
 
-    nav.style.display = "none";
-    body.style.display = "none";
-    footer.style.display = "none";
-    loader.style.display = "block";
+
+function membresAlert(){
+    let button = document.getElementById("membresClick");
+
+    button.addEventListener("click",function confirmation(){
+        let choice = confirm("Voulez vous vraiment aller sur la page membres ?");
+        if(choice){
+            window.open("../membres.html",'_self');
+        }
+    });
 }
 
 
-setTimeout(loaderEnd,2000);
+
 
 function main(){
     augmenterTemps();
     date();
     loaderStart();
+    membresAlert();
 }
 
 main();
