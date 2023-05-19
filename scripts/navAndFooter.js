@@ -1,6 +1,8 @@
 function mainLogoLink(){ 
     //permet de rediriger vers accueil sans passer par une balise <a> à cause du style qui fait qu'on doit tout modifier (gain de temps)
     window.open("../accueil.html","_blank");
+    let accueilBlock = document.getElementById("self");
+    accueilBlock.style.backgroundColor = "blue";
 }
 
 //Timer a gauche de l'heure et à droite du menu de nav
@@ -66,7 +68,7 @@ setTimeout(loaderEnd,2000);
 function membresAlert(){
     let button = document.getElementById("membresClick");
 
-    button.addEventListener("click",function confirmation(){
+    button.addEventListener('click',function confirmation(){
         let choice = confirm("Voulez vous vraiment aller sur la page membres ?");
         if(choice){
             window.open("../membres.html",'_self');
@@ -74,7 +76,19 @@ function membresAlert(){
     });
 }
 
-
+function backgroundColorChange(){
+    if(document.title == "L@BISEN - Membres"){
+        let pageButton = document.getElementById("membresClick");
+        pageButton.style.backgroundColor = "#2018C4";
+        pageButton.style.color = "white";
+        console.log("old color : #D4D4D4 \nnew color : #2018C4")
+        return ;
+    }
+    let pageButton = document.getElementById("self");
+    pageButton.style.backgroundColor = "#2018C4";
+    pageButton.style.color = "white";
+    console.log("old color : #D4D4D4 \nnew color : #2018C4")
+}
 
 
 function main(){
@@ -82,6 +96,8 @@ function main(){
     date();
     loaderStart();
     membresAlert();
+    backgroundColorChange();
+
 }
 
 main();
