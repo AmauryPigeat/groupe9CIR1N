@@ -27,6 +27,9 @@
     padding-bottom: 6.70%;
 }
 
+#competences img:hover{
+    scale : 1.5
+}
 
 #presentation{
     display: block;
