@@ -104,6 +104,7 @@ function editMode(){
     delButton.addEventListener("click",function(){
         let div = document.getElementById("cardNewMember" + newMemberCount);
         div.remove();
+        newMemberCount--;
     });
 
     /*quit edit mode*/
