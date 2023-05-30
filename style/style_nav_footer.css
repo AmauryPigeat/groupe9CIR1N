@@ -10,6 +10,10 @@
     scale: 300%;
 }
 
+nav img:hover{
+    cursor: pointer;
+}
+
 nav ul{
     list-style-type: none;
     display: flex;
