@@ -90,6 +90,28 @@ function backgroundColorChange(){
     console.log("old color : #D4D4D4 \nnew color : #2018C4")
 }
 
+function call(){
+    let numeros = document.querySelectorAll('.numeros__footer');
+
+    numeros.forEach(num => {
+        num.addEventListener("copy", () => {
+            let numCheck = prompt("Si vous voulez appeler ce numéro : " + num.textContent + ", entrez le de nouveau dans le champ ci-dessous puis validez ");
+            if(numCheck == num.textContent){
+                console.log("Vous appelez ce numéro : " + num.textContent);
+                let audio = new Audio('audios/AUDIO.mp3');
+                audio.play();
+            }
+            else {
+                alert("Mauvais numéro !");
+            }
+        });
+    });
+
+
+
+
+
+}
 
 function main(){
     augmenterTemps();
@@ -97,7 +119,7 @@ function main(){
     loaderStart();
     membresAlert();
     backgroundColorChange();
-
+    call();
 }
 
 main();
