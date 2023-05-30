@@ -68,6 +68,32 @@
     text-align: center;
 }
 
+.topPage{
+    text-align: center;
+}
+
+.button__footer{
+    margin-bottom: 2vw;
+    background-color: #6a696b;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.button__footer:hover{
+    background-color: #4c4c4d;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+
 @media screen and (max-width: 1504px) {
     #layout{
         margin-top: 9.5vw;

@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/4b53b9d784.js" crossorigin="anonymous"></script>
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <script src="scripts/navAndFooter.js" defer></script>
+        <script src="scripts/publications.js" defer></script>
     </head>
 
     <nav>
@@ -62,29 +63,89 @@
         </div>
         <div id="layout">
             <h1>Nos Publications</h1>
+
+            <div class="filter">
+                <div class="filterAutor">
+                    <input type="text" placeholder="Nom de l'auteur" class="autorName">
+                </div>
+                <div class="filterTitle">
+                    <input type="text" placeholder="Titre de la publication" class="titleName">
+                </div>
+
+                <div class="filterDate">
+                    <select name="year" class="yearDate">
+                        <option>----</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                    </select>
+                </div>
+
+                <div class="filterType">
+                    <input type="radio" name="type" value="revue" class="inputType">Article dans une revue
+                    <input type="radio" name="type" value="communication">Communication dans un congrès
+                    <input type="radio" name="type" value="all" checked>Toutes
+                    <br><button class="filterButton">Filtrer</button>
+                </div>
+            </div>
+
+
             <div id="liste">
-                <h2>Nos 5 dernières publications :</h2>
                 <ul>
-                    <li class="red">
-                        Sébastien Puma, Emmanuel Sander, Matthieu Saumard, Isabelle Barbet, Aurélien Latouche. <b>Reconsidering conceptual knowledge Heterogeneity of its components</b> <br>
-                        <i>Journal of Experimental Child Psychology</i>, 2023, 227, pp. 105587
-                    </li>
-                    <li class="blue">
-                        Ayoub Karine, Thibault Napoléon, Maher Jridi. <b>Semantic Images Segmentation for autonomous driving using Self-Attention Knowledge Distillation</b><br>
-                        <i>16TH IEEE INTERNATIONAL CONFERENCE ON SIGNAL IMAGE TECHNOLOGY & INTERNET SYSTEMS</i>, Oct 2022, Dijon, France
-                    </li>
-                    <li class="blue">
-                        Salima Bourbia, Ayoub Karine, Aladine Chetouani, Mohammed El Hassouni, Maher Jridi. <b>No-reference Point Clouds Quality Assessment using Transfomer and Visual Saliency</b><br>
-                        <i>QoEVMA'22: Proceedings of the 2nd Workshop on Quality of Experience (QoE) in Visual Multimedia Applications, ACM Multimedia</i>, Oct 2022, Lisbon, Portugal
-                    </li>
-                    <li class="red">
-                        Ayoub Karine, Maher Jridi, Rémi Adde, Sébastien Demousseille. <b>CONCEPTION ET DEVELOPPEMENT D’UNE VOITURE AUTONOME</b><br>                        
-                        <i>La Revue 3 E. I</i>, 2022
-                    </li>
-                    <li class="red">
-                        Sylvain Lefebvre, Maher Jridi. <b>Mutalisation des Ressources IOT par Conteneurisation de Passerelle</b><br>
-                        <i>La Revue 3 E. I</i>, 2022, Intelligence Artificielle et Génie Électrique 2ème partie, 109, pp.69
-                    </li>
+                    <div class="heterogeneity">
+                        <li class="red">
+                            <a class="heterogeneityNames">Sébastien Puma, Emmanuel Sander, Matthieu Saumard, Isabelle Barbet, Aurélien Latouche</a>. <b><a class="heterogeneityTitle">Reconsidering conceptual knowledge Heterogeneity of its components</a></b> <br>
+                            <i>Journal of Experimental Child Psychology</i>, <a class="heterogeneityDate">2023</a>, 227, pp. 105587
+                        </li>
+                    </div>
+                    <div class="semantic">
+                        <li class="blue">
+                            <a class="semanticNames">Ayoub Karine, Thibault Napoléon, Maher Jridi</a>. <b> <a class="semanticTitle">Semantic Images Segmentation for autonomous driving using Self-Attention Knowledge Distillation</a></b><br>
+                            <i>16TH IEEE INTERNATIONAL CONFERENCE ON SIGNAL IMAGE TECHNOLOGY & INTERNET SYSTEMS</i>, Oct <a class="semanticDate">2022</a>, Dijon, France
+                        </li>
+                    </div>
+                    <div class="clouds">
+                        <li class="blue">
+                            <a class="cloudsNames">Salima Bourbia, Ayoub Karine, Aladine Chetouani, Mohammed El Hassouni, Maher Jridi</a>. <b> <a class="cloudsTitle">No-reference Point Clouds Quality Assessment using Transfomer and Visual Saliency</a></b><br>
+                            <i>QoEVMA'22: Proceedings of the 2nd Workshop on Quality of Experience (QoE) in Visual Multimedia Applications, ACM Multimedia</i>, Oct <a class="cloudsDate">2022</a>, Lisbon, Portugal
+                        </li>
+                    </div>
+                    <div class="car">
+                        <li class="red">
+                            <a class="carNames">Ayoub Karine, Maher Jridi, Rémi Adde, Sébastien Demousseille</a>. <b> <a class="carTitle">CONCEPTION ET DEVELOPPEMENT D’UNE VOITURE AUTONOME</a></b><br>                        
+                            <i>La Revue 3 E. I</i>, <a class="carDate">2022</a>
+                        </li>
+                    </div>
+                    <div class="iot">
+                        <li class="red">
+                            <a class="iotNames">Sylvain Lefebvre, Maher Jridi</a>. <b> <a class="iotTitle">Mutalisation des Ressources IOT par Conteneurisation de Passerelle</a></b><br>
+                            <i>La Revue 3 E. I</i>, <a class="iotDate">2022</a>, Intelligence Artificielle et Génie Électrique 2ème partie, 109, pp.69
+                        </li>
+                    </div>
+                    <div class="no-result">
+                        <h2>Aucun résultat !</h2>
+                    </div>
                 </ul>
                 <hr>
                 <ul>
@@ -96,9 +157,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="legende">
-                
-            </div>
+
         </div>
     </body>
 
