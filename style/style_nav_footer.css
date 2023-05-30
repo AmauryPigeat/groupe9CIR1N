@@ -3,6 +3,13 @@
     font-family: "Montserrat", arial, sans-serif;
 }
 
+#loader{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    scale: 300%;
+}
+
 nav ul{
     list-style-type: none;
     display: flex;
@@ -80,6 +87,13 @@ nav ul li .sub_menu2{
     padding: .3em;
     border: 1px solid black;
     margin-left: -3%;
+}
+
+nav #timerAndClock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
 
 /*

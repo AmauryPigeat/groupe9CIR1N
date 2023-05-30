@@ -2,18 +2,19 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title> L@BISEN - Accueil </title>
+        <title> L@BISEN - Accueil</title>
         <link href="style/style_nav_footer.css" rel="stylesheet">
         <link href="style/style_accueil.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4b53b9d784.js" crossorigin="anonymous"></script>
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <script src="scripts/navAndFooter.js" defer></script>
+        <script src="scripts/accueil.js" defer></script>
     </head>
     <!--test-->
     <nav>
         <ul>
-            <li><img src="img/logo_labisen.png" title="logo_labisen" alt="Image not found !" width="213px"></li>
-            <li id="first" class="not_last"><a href="accueil.html"><i class="fa-solid fa-house"></i> Accueil</a></li>
+            <li><img src="img/logo_labisen.png" title="logo_labisen" alt="Image not found !" width="213px" onclick="mainLogoLink()"></li>
+            <li id="first" class="not_last"><a id="self" href="accueil.html"><i class="fa-solid fa-house"></i> Accueil</a></li>
             <li class="wrap">
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Recherche</a>
                 <ul class="sub_menu1">
@@ -21,7 +22,7 @@
                     <li><a href="plateformeTechno.html"><i class="fa-solid fa-laptop"></i> Plateformes technologiques</a></li>
                 </ul>
             </li>
-            <li class="not_last"><a href="membres.html"><i class="fa-solid fa-people-group"></i> Membres</a></li>
+            <li class="not_last"><a id="membresClick" href="#"><i class="fa-solid fa-people-group"></i> Membres</a></li>
             <li class="not_last"><a href="projets.html"><i class="fa-solid fa-folder"></i> Projets</a></li>
             <li class="not_last"><a href="publications.html"><i class="fa-solid fa-share"></i> Publications</a></li>
             <li class="wrap">
@@ -33,6 +34,12 @@
                 </ul>
             </li>
             <li><a href="partenaires.html"><i class="fa-solid fa-handshake-simple"></i> Partenaires</a></li>
+            <li>
+                <ul id="timerAndClock">
+                    <li id="clock"></li>
+                    <li id="timer"></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
@@ -49,17 +56,24 @@
         
     </script>
     <!-------------------------------------->
-
+    <header>
+        
+    </header>
+    
     <body>
+        <div id="loader">
+            <img src="img/xddingLoader.webp" title="xxdingLoader" alt="Image not found !" id="imgLoader">
+        </div>
+
         <div id="layout">
             <div id="presentation">
-                <h1>Qui sommes-nous ?</h1>
+                <h1 id="quiSommeNous"></h1>
                 <p>          
                     L’équipe « Vision et Analyse de Données » est une équipe du laboratoire L@bISEN de l’ISEN Yncréa Ouest. L’équipe mène une activité de R&D pour la conception de plateformes technologiques d’observations et d’analyses à partir de réseaux de capteurs intelligents.
                 </p>
             </div>
             <img class="reunion" src="img/accueil/equipe_reunion.png" title="illustration_reunion" alt="Image not Found !" width="100%" down="1%">
-            <a class="axes_recherches" href="theme_recherche.html"><i class="fa-solid fa-arrow-right"></i> Voir nos axes de recherches !</a>
+            <a class="axes_recherches" href="themeRecherche.html" target="_blank"><i class="fa-solid fa-arrow-right"></i> Voir nos axes de recherches !</a>
             <div id="actualites">
                 <h1>Nos actualités</h1>
                 <ul>
@@ -81,7 +95,7 @@
             </div>
             <div id="competences">
                 <h1>Nos compétences</h1>
-                <img src="img/accueil/competences.jpg" title="competences" alt="Image not found !" width="100%">
+                <img src="img/accueil/competences.jpg" title="competences" alt="Image not found !" width="80%">
             </div>
         </div>
 
