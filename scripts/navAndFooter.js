@@ -102,15 +102,16 @@ function call(){
                 audio.play();
             }
             else {
-                alert("Mauvais numéro !");
+                console.log("Mauvais numéro !");
             }
         });
     });
+}
 
-
-
-
-
+function plagiat(){
+    document.body.addEventListener('copy', ()=>{
+        console.log("Attention au plagiat !");
+    })
 }
 
 function main(){
@@ -120,6 +121,7 @@ function main(){
     membresAlert();
     backgroundColorChange();
     call();
+    plagiat();
 }
 
 main();
