@@ -7,6 +7,7 @@
         <link href="style/style_contact.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4b53b9d784.js" crossorigin="anonymous"></script>
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <script src="scripts/contact.js" defer></script>
     </head>
 
     <nav>
@@ -48,29 +49,75 @@
     </script>
     <!-------------------------------------->
 
-    <body>
-       
-        <h1>Contactez le responsable d'équipe <i class="fa-solid fa-id-badge"></i></h1>
-        <h3>(Maher Jridi - maher.jridi@isen-ouest.yncrea.fr)</h3>
 
-        <form action="contact.html" method="post">
-            <div class="divName">
-                <input type="text" placeholder="Prénom Nom">
-                <i class="fa-solid fa-user"></i>
+
+
+
+
+
+
+
+    <body>
+
+
+        <div class="overlay"></div>
+
+        <div class="modal">
+            <div class="modal__header">
+                <h2 class="modal__header__title">Pile ou face ?</h2>
+                <h3 class="modal__header__consigne">Si <b>Pile</b>, le formulaire est envoyé ! Si <b>Face</b>, recommencez !</h3>
+
             </div>
-            <div class="divMail">
-                <input type="text" placeholder="email@exemple.com">
-                <i class="fa-solid fa-at"></i>
+
+            <div class="modal__body">
+                <img src="img/contact/cercle_gris.png" alt="?" class="modal__body__img">
             </div>
-            <div class="divMessage">
-                <textarea name="paragraph_text" cols="50" rows="10" placeholder="Votre message (500 caractères maximum)"></textarea>
+
+            <div class="modal__footer">
+                <button class="modal__footer__button">Lancez !</button>
             </div>
-            <div class="divSubmit">
-                <input type="submit" value="Envoyer">
-            </div>
-        </form>
+
+        </div>
+
+
+
+        <div id="mainDiv">
+            <h1>Contactez le responsable d'équipe <i class="fa-solid fa-id-badge"></i></h1>
+            <h3>(Maher Jridi - maher.jridi@isen-ouest.yncrea.fr)</h3>
+
+            <form action="contact.html" method="post">
+                <div class="divName">
+                    <input type="text" placeholder="Prénom Nom" id="formName">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="divMail">
+                    <input type="text" placeholder="email@exemple.com" id="formEmail">
+                    <i class="fa-solid fa-at"></i>
+                </div>
+                <div class="divMessage">
+                    <textarea name="paragraph_text" cols="50" rows="10" placeholder="Votre message (500 caractères maximum)" id="formMessage"></textarea>
+                </div>
+                <div class="divSubmit">
+                    <input type="button" value="Envoyer" id="formButton" class="modal-trigger">
+                </div>
+            </form>
+        </div>
+
+
+        
+
 
     </body>
+
+
+
+
+
+
+
+
+
+
 
     <footer>
         <div id="school">

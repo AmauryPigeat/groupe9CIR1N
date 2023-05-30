@@ -124,6 +124,141 @@ form .divSubmit input{
     border-radius: 5px;
 }
 
+/*
+MODAL
+*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal {
+    z-index: 5;
+    position: fixed;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 3px;
+    padding: 20px;
+    display: none;
+}
+
+.modal__close{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    
+
+    display: none;
+}
+
+.modal__close svg{
+    width: 20px;
+    height: 20px;
+}
+
+.modal__header{
+    cursor: default;
+    user-select: none;
+}
+
+.modal__header h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.modal__header h3{
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.modal--open{
+    display: block;
+}
+
+.modal--close{
+    display: none;
+}
+
+.modal__body {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.modal__body img{
+    width: 40%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+.modal__footer{
+    text-align: center;
+}
+
+.modal__footer__button{
+    margin-bottom: 2vw;
+    background-color: #428EFF;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.modal__footer__button:hover{
+    background-color: #2356a1;
+}
+
+
+.img__disappear{
+    animation: disappear 1 2s ease-out;
+}
+
+.img__appear{
+    animation: appear 1 2s ease-in;
+    display: block;
+}
+
+@keyframes disappear{
+    from{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    to{
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
 @media screen and (max-width: 1504px) {
     h1{
         margin-top: 9.5vw;
