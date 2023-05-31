@@ -3,6 +3,7 @@ let string = ["Qui"," sommes","-nous"," ?"];
 let printPlace = document.getElementById("quiSommeNous");
 
 function printBySecondQSN(){
+    /* a chaque seconde on modifie la position */
     if(i == 6){
         printPlace.style.textAlign = "right";
         i++;
@@ -18,6 +19,7 @@ function printBySecondQSN(){
         i++;
         return ;
     }
+    /* on met = a rien car on est arrivé à la fin */
     if(i == 9){
         printPlace.innerText = "";
         i = 2;
