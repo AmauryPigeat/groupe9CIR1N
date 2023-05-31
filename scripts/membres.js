@@ -9,7 +9,10 @@ function confirmEnterEdit(){
     if(user == "admin"){
         let mdp = prompt("MDP : ");
         if(mdp == "admin_pwd"){
-            editMode();
+            let editButton = document.getElementById("editButton");
+            editButton.style.color = "red";
+            let modifierDiv = document.getElementById("addDelQuitEditButton");
+            modifierDiv.style.opacity = 100;
         }
         else{
             alert("Mauvais mot de passe (touche pas à ça garçon)");
@@ -18,13 +21,6 @@ function confirmEnterEdit(){
 }
 
 function editMode(){
-    /* initialisation */
-
-    let editButton = document.getElementById("editButton");
-    editButton.style.color = "red";
-    let modifierDiv = document.getElementById("addDelQuitEditButton");
-    modifierDiv.style.opacity = 100;
-
     /*adding a cell*/
 
     let addButton = document.getElementById("plus");
@@ -106,13 +102,14 @@ function editMode(){
         div.remove();
         newMemberCount--;
     });
-
     /*quit edit mode*/
     let quitButton = document.getElementById("cross");
     quitButton.addEventListener("click",function(){
+        let editButton = document.getElementById("editButton");
+        let modifierDiv = document.getElementById("addDelQuitEditButton");
         editButton.style.color = "black";
         modifierDiv.style.opacity = 0;
-    })
+    });
 }
 
 
@@ -120,6 +117,7 @@ function editMode(){
 let newMemberCount = 0;
 function main(){
     enterEditMode();
+    editMode();
 }
 
 main();
