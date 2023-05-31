@@ -1,6 +1,6 @@
 function mainLogoLink(){ 
     //permet de rediriger vers accueil sans passer par une balise <a> à cause du style qui fait qu'on doit tout modifier (gain de temps)
-    window.open("./groupe9CIRN/accueil.html","_blank");
+    window.open("../accueil.html","_blank");
     let accueilBlock = document.getElementById("self");
     accueilBlock.style.backgroundColor = "blue";
 }
