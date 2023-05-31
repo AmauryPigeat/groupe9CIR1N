@@ -129,11 +129,24 @@ form .divSubmit input{
     border-radius: 5px;
 }
 
+.button-grey{
+    background-color: grey;
+}
+
+.button-grey:hover{
+    cursor: not-allowed;
+}
+
+.button-blue:hover{
+    cursor: pointer;
+}
+
 /*
 MODAL
 */
 
 .overlay {
+    z-index: 4;
     position: fixed;
     top: 0;
     left: 0;
@@ -231,6 +244,7 @@ MODAL
 
 .modal__footer__button:hover{
     background-color: #2356a1;
+    cursor: pointer;
 }
 
 
