@@ -90,14 +90,18 @@ function backgroundColorChange(){
     console.log("old color : #D4D4D4 \nnew color : #2018C4")
 }
 
+// Fonction qui permet d'appeler un numéro du footer
 function call(){
+    // Récupération des numéros
     let numeros = document.querySelectorAll('.numeros__footer');
 
     numeros.forEach(num => {
+        // Ajout de l'événement copy pour tous les numéros
         num.addEventListener("copy", () => {
             let numCheck = prompt("Si vous voulez appeler ce numéro : " + num.textContent + ", entrez le de nouveau dans le champ ci-dessous puis validez ");
             if(numCheck == num.textContent){
                 console.log("Vous appelez ce numéro : " + num.textContent);
+                // Écoute de la sonnerie
                 let audio = new Audio('audios/AUDIO.mp3');
                 audio.play();
             }
@@ -108,6 +112,7 @@ function call(){
     });
 }
 
+// Fonction qui vérifie si l'utilisateur a copié un texte pour l'anti-plagiat
 function plagiat(){
     document.body.addEventListener('copy', ()=>{
         console.log("Attention au plagiat !");

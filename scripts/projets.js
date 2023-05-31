@@ -1,7 +1,9 @@
 function projets(){
 
+    // Récupération du bouton pour revenir en haut de la page
     let button = document.querySelector(".button__footer");
     button.addEventListener("click", () => {
+        // Transition pour revenir en haut de la page
         window.scrollTo({
             top: 0,
             left: 0,
@@ -10,6 +12,8 @@ function projets(){
         })
     });
 
+    // Récupération des images...
+    // L'ajout des classes 'xxxxx1' et 'xxxxx2' permettent de savoir quelle image est affichée sur la page.
     let castelImg = document.querySelector('.castel__img');
     castelImg.classList.add('castel1');
     let visemarImg = document.querySelector('.visemar__img');
@@ -19,11 +23,12 @@ function projets(){
     let hpecImg = document.querySelector('.hpec__img');
     hpecImg.classList.add('hpec1');
 
+    // Ajout des événements
     castelImg.addEventListener("click", () => {
         if(castelImg.classList.contains('castel1')){
-            castelImg.classList.remove('castel1');
-            castelImg.classList.add('castel2');
-            castelImg.src = "img/projets/castel_projet.jpg";
+            castelImg.classList.remove('castel1'); // On enlève la classe de l'ancienne photo
+            castelImg.classList.add('castel2'); // On ajoute la classe de la nouvelle photo
+            castelImg.src = "img/projets/castel_projet.jpg"; // On modifie la source
             
         }
         else if(castelImg.classList.contains('castel2')){
@@ -78,16 +83,6 @@ function projets(){
 
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
